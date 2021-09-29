@@ -7,7 +7,7 @@ const router = express.Router();
 //import url database model
 const URL = require('../models/UrlModel');
 
-router.post('/api/shorturl/new', async function(req,res) {
+router.post('/api/shorturl/', async function(req,res) {
     const url = req.body.url;
     const urlCode = shortid.generate()
     if (!validUrl.isWebUri(url)) {
