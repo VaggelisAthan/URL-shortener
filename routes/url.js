@@ -11,9 +11,9 @@ router.post('/api/shorturl/', async function(req,res) {
     const url = req.body.url;
     const urlCode = shortid.generate()
     if (!validUrl.isWebUri(url)) {
-        res.status(401).json({
-            error: 'invalid URL'
-        })
+        res.json({
+            error: 'Invalid URL'
+          })
     }
     else {
         try {
