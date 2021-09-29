@@ -8,4 +8,5 @@ Setup.
 2. Create a .env file inside the project folder.
 3. inside the .env file declare the port you want the app to run on. PORT = "Your Port".
 4. inside the .env file declare your mongoDB URI. MONGO_URI = "Your MongoDB connection uri".
-5. Start the application with npm start.
+5. Download all the dependencies using nmp install.
+6. Start the application with npm start.
